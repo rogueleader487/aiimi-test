@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-6 content full-border" *ngIf="showAddUser">
+      <form [formGroup]="newUserForm" (ngSubmit)="submit()">
+
+        <div class="input-group">
+          <input class="form-control full-border" type="text" placeholder="First name" formControlName="firstName" />
+          <input class="form-control full-border" type="text" placeholder="Last name" formControlName="lastName" />
+        </div>
+        <div class="input-group">
+          <input class="form-control full-border" type="text" placeholder="Job Title" formControlName="jobTitle" />
+          <input [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" class="form-control full-border" type="text" placeholder="Phone" formControlName="phone" />
+          <input [ngClass]="{ 'is-invalid': submitted && f.email.errors }" class="form-control full-border" type="email" placeholder="Email" formControlName="email" />
+        </div>
+        <div class="input-group justify-content-center">
+          <small class="text-danger" *ngIf="submitted && f.email.errors ">Please enter a valid email address.</small>
+        </div>
+        <div class="input-group justify-content-center">
+          <small class="text-danger" *ngIf="submitted && f.phone.errors ">Please enter a valid phone number.</small>
+        </div>
+        <div class="input-group justify-content-center">
+          <input type="submit" class="btn btn-outline-secondary btn-brand full-border" value="Create" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="fixed-bottom d-flex justify-content-center">
+  <input type="button" class="btn btn-outline-secondary btn-brand full-border" value="New User +" (click)="addUserDisplay()" />
+</div>

@@ -1,0 +1,58 @@
+.body {
+  background-color: #1A1A1A;
+}
+
+.content {
+  background-color: #fff;
+  border-color:#E6235C;
+}
+
+.btn-brand {
+  color: #fff;
+  background-color: #E6235C;
+  border-top-right-radius:1em;
+  border-bottom-right-radius:1em;
+}
+
+.input-brand {
+  border-style: solid;
+  border-radius: 1em;
+  border-width: 0.1em;
+  border-color: #E6235C;
+}
+
+.results {
+    color:#fff;
+    border-style:solid;
+    border-radius:1em;
+    border-width:0.1em;
+    margin:1em;
+    padding:1em;
+}
+
+.suggestion {
+  border-color: #E6235C;
+  border-radius:5em !important;
+  margin: 0.2em;
+}
+
+.suggestion-item {
+    border:none;
+}
+
+.full-border {
+  border-style: solid;
+  border-radius: 1em !important;
+  border-width: 0.1em;
+  margin:1em;
+}
+
+.toast-brand {
+  border-style: solid;
+  border-radius: 5em !important;
+  border-width: 0.1em;
+  width:10.5em !important;
+  padding:0.5em !important;
+  background-color: #E6235C !important;
+
+}
